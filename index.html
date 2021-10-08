@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <meta property="og:title" content="Secos e molhados">
+    <meta property="og:type" content="text">
+    <meta property="og:image" content="https://pbs.twimg.com/media/Ek8D1xXUcAcDjzA.jpg">
+    <meta property="og:url" content="https://hugo-paiva.github.io/website/">
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <style>
+        body {
+            background-color: brown;
+            line-height: 30px;
+        }
+        form {
+            background-color: white;
+            padding: 1em;
+            margin: auto;
+            width: 600px;
+            border-radius: 1em;
+        }
+        fieldset {
+            width: fit-content;
+        }
+        img {
+            width: 500px;
+            box-shadow: 2px 2px 5px black;
+        }
+        .center {
+            display: block;
+            margin: auto;
+        }
+        #cancel {
+            background-color: #FE3B34;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <h1>Veja alguns elementos de entrada de dados</h1>
+        <h2 style="text-align:center">O Mundo dos Formulários</h2>
+        <img src="https://pbs.twimg.com/media/Ek8D1xXUcAcDjzA.jpg" alt="Imagem descrevendo o Mundo dos Formulários" class="center"><br />
+
+        <fieldset style="width: 450px;">
+            <legend>CADASTRO</legend>
+            <label for="name">Entre com seu nome aqui:</label>
+            <input type="text" id="name"><br />
+            <label for="email">Digite seu email favorito:</label>
+            <input type="email" id="email"><br />
+            <label for="pass">Entre com uma senha forte:</label>
+            <input type="password" id="pass"><br />
+            
+            <label for="birth">Data de nascimento</label>
+            <input type="date" id="birth">
+        </fieldset>
+
+        <fieldset>
+            <legend>GÊNERO</legend>
+            <input type="radio" id="gender_1" name="gender" value="Masculino">
+            <label for="gender_1">Masculino</label> <br />
+            
+            <input type="radio" id="gender_2" name="gender" value="Feminino">
+            <label for="gender_2">Feminino</label><br />
+
+            <input type="radio" id="gender_3" name="gender" value="Prefiro não informar">
+            <label for="gender_3">Prefiro não informar</label>
+
+
+        </fieldset>
+
+        <h2>Matérias favoritas</h2>
+        <input type="checkbox" id="math">
+        <label for="math">Matemática</label><br />
+        <input type="checkbox" id="portuguese">
+        <label for="portuguese">Português</label><br />
+        <input type="checkbox" id="geography">
+        <label for="geography">Geografia</label><br />
+        <input type="checkbox" id='writing'>
+        <label for="writing">Redação</label><br />
+        <input type="checkbox" id='biology'>
+        <label for="biology">Biologia</label><br />
+        <input type="checkbox" id='arts'>
+        <label for="arts">Artes</label>
+
+        <h2>Hora de estudo diárias</h2>
+        <label for="">De 0 a 8 horas</label>
+        <input type="range" min="0" max="8" ><br />
+
+        <h2>Recomendações ou reclamações</h2>
+        <textarea name="recomedation" id="tips" cols="79" rows="10"></textarea>
+
+        <h2>Passos finais</h2>
+
+        <input type="submit" value="Clique para Enviar">
+        <input type="reset" value="Clique aqui para redefinir" id="cancel">
+
+    </form>
+
+</body>
+</html>
